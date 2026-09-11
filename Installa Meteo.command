@@ -10,7 +10,8 @@ echo ""
 # 1) Copia Meteo.app in /Applications
 echo "▸ Copio Meteo.app in /Applications..."
 cp -rf "$DIR/Meteo.app" /Applications/Meteo.app
-xattr -cr /Applications/Meteo.app
+xattr -dr com.apple.quarantine /Applications/Meteo.app 2>/dev/null
+xattr -cr /Applications/Meteo.app 2>/dev/null
 codesign --force --deep --sign - /Applications/Meteo.app &>/dev/null
 echo "  ✓ fatto"
 

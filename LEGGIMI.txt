@@ -1,0 +1,19 @@
+════════════════════════════════════════
+  Meteo — Istruzioni installazione
+════════════════════════════════════════
+
+Se macOS dice "non può verificare che sia privo di malware":
+
+PASSO 1 — Apri Terminal
+  (Finder → Applicazioni → Utility → Terminale)
+
+PASSO 2 — Copia e incolla questo comando, premi Invio:
+
+  xattr -dr com.apple.quarantine ~/Desktop/MeteoInstaller
+
+PASSO 3 — Fai doppio clic su "Installa Meteo.command"
+
+════════════════════════════════════════
+In alternativa, trascina "Sblocca e Installa.command"
+dentro la finestra del Terminale e premi Invio.
+════════════════════════════════════════
