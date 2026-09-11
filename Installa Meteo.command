@@ -7,6 +7,9 @@ echo "║     Meteo  —  Installer      ║"
 echo "╚══════════════════════════════╝"
 echo ""
 
+# Sblocca Gatekeeper su tutta la cartella (necessario se scaricata da internet)
+xattr -dr com.apple.quarantine "$DIR" 2>/dev/null
+
 # 1) Copia Meteo.app in /Applications
 echo "▸ Copio Meteo.app in /Applications..."
 cp -rf "$DIR/Meteo.app" /Applications/Meteo.app
